@@ -9,18 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
 
-    <script src=""></script>
+    <script src="lib/jquery-3.7.1.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         $(function () {
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper(".serviceSwiper", {
+                slidesPerView: 2.5,
+                spaceBetween: 32,
+            });
+
+            var swiper = new Swiper(".blogSwiper", {
                 slidesPerView: 3,
-                spaceBetween: 30,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
+                spaceBetween: 32,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
+                allowTouchMove: false,
             });
         });//script end
     </script>
@@ -67,20 +73,20 @@
 
     <main class="main">
         <section class="main_visual">
-            <img src="img/67b93a7823ae6ade0f292475_main image2 1 1 복사.webp"
+            <img src="img/67b93a7823ae6ade0f292475_main image2 1 1 복사.webp"
                 alt="Purpose-Driven AI Powered by your data">
 
             <div class="text">
-                    <h3>Purpose-Driven AI<br>
-                        Powered by your data</h3>
-                    <p>기업의 데이터로 완성되는 맞춤형 Gen AI 솔루션</p>
-                    <div class="main_visual_btn">
-                        <a href="#">Gen AI 패키지 알아보기 →</a>
-                    </div><!-- .main_visual_btn end -->
+                <h3>Purpose-Driven AI<br>
+                    Powered by your data</h3>
+                <p>기업의 데이터로 완성되는 맞춤형 Gen AI 솔루션</p>
+                <div class="main_visual_btn">
+                    <a href="#">Gen AI 패키지 알아보기 →</a>
+                </div><!-- .main_visual_btn end -->
             </div><!-- .text end -->
         </section><!-- .main_visual end -->
 
-        <section class="section-01">
+        <section class="section section-01">
             <div class="inner">
                 <div class="section_title">
                     <p class="heading">
@@ -89,49 +95,224 @@
                     </p>
                 </div><!-- .section_title end -->
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div class="swiper serviceSwiper">
                     <div class="swiper-wrapper">
-                
+
                         <div class="swiper-slide">
                             <div class="item_title">
                                 <p class="num">01</p>
                                 <p class="heading5">AI 유스케이스 발굴</p>
                             </div><!-- .item_title end -->
-                            <span>기업 내 병목 현상을 신속하게 진단하고, 데이터 기반 인사이트를 통해 실질적인 ROI를 창출할 수 있는 유스케이스를 발굴하여, 비즈니스 프로세스를 혁신합니다.</span>
+                            <span>기업 내 병목 현상을 신속하게 진단하고, 데이터 기반 인사이트를 통해 실질적인 ROI를 창출할 수 있는 유스케이스를 발굴하여, 비즈니스 프로세스를
+                                혁신합니다.</span>
                         </div><!-- .swiper-slide end -->
-                
+
                         <div class="swiper-slide">
                             <div class="item_title">
                                 <p class="num">02</p>
                                 <p class="heading5">AI 솔루션 개발 및 배포</p>
                             </div><!-- .item_title end -->
-                            <span>비즈니스 목표와 요구사항을 면밀히 분석해 맞춤형 AI 솔루션을 설계·개발하며, 체계적인 품질 관리와 실시간 피드백을 통해 지속적으로 개선하여 최적의 성과를 실현합니다.</span>
+                            <span>비즈니스 목표와 요구사항을 면밀히 분석해 맞춤형 AI 솔루션을 설계·개발하며, 체계적인 품질 관리와 실시간 피드백을 통해 지속적으로 개선하여 최적의 성과를
+                                실현합니다.</span>
                         </div><!-- .swiper-slide end -->
-                
+
                         <div class="swiper-slide">
                             <div class="item_title">
                                 <p class="num">03</p>
                                 <p class="heading5">기존 시스템 통합</p>
                             </div><!-- .item_title end -->
-                            <span>기존 IT 인프라와 신규 AI 솔루션 간 원활한 데이터 연동 및 최적화된 통합 전략을 수립, 데이터 보안과 시스템 안정성을 최우선으로 하는 확장 가능한 통합 환경을 구축합니다.</span>
+                            <span>기존 IT 인프라와 신규 AI 솔루션 간 원활한 데이터 연동 및 최적화된 통합 전략을 수립, 데이터 보안과 시스템 안정성을 최우선으로 하는 확장 가능한
+                                통합 환경을 구축합니다.</span>
                         </div><!-- .swiper-slide end -->
-                
+
                         <div class="swiper-slide">
                             <div class="item_title">
                                 <p class="num">04</p>
                                 <p class="heading5">성능 평가 및 유지 보수</p>
                             </div><!-- .item_title end -->
-                            <span>24시간 모니터링과 정기 진단을 통해 도입된 솔루션의 성능과 보안을 지속적으로 개선, 급변하는 비즈니스 환경에 대응하는 안정적 운영 환경을 제공합니다.</span>
+                            <span>24시간 모니터링과 정기 진단을 통해 도입된 솔루션의 성능과 보안을 지속적으로 개선, 급변하는 비즈니스 환경에 대응하는 안정적 운영 환경을
+                                제공합니다.</span>
                         </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide"></div>
                     </div><!-- .swiper-wrapper end -->
                 </div><!-- .swiper end -->
             </div><!-- .inner end -->
         </section><!-- .section-01 end -->
 
-        <section class="section-02">
-            
+        <section class="section section-02">
+            <div class="inner">
+                <div class="section_title">
+                    <p class="heading">
+                        Gen AI<br>
+                        Offerings
+                    </p>
+
+                    <p class="heading2">
+                        기업향 Gen AI 서비스+프로덕트 패키지
+                    </p>
+
+                    <a href="#" class="view_more">보러가기 →</a>
+                </div><!-- .section_title end -->
+
+                <div class="item_list">
+                    <div class="item_wrap">
+                        <div class="item">
+                            <a href="">
+                                <img src="img/67b34391990346572b702caa_Frame 40641.webp" alt="">
+                                <p>AI Agent 를 활용한<br>
+                                    비즈니스 자동화</p>
+                                <img src="img/67b334d6facfc75e79347ba9_Vector 3 (1).svg" alt="" class="arrow">
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <a href="">
+                                <img src="img/67b3439291df7260ef1aeb65_Frame 40648.webp" alt="">
+                                <p>RAG 기반 맞춤형<br>
+                                    애플리케이션 개발</p>
+                                <img src="img/67b334d6facfc75e79347ba9_Vector 3 (1).svg" alt="" class="arrow">
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <a href="">
+                                <img src="img/67b34392c83c6c679b1b26d2_Frame 40669.webp" alt="">
+                                <p>AICC 구축을 위한<br>
+                                    STT 및 TTS 모델 제공</p>
+                                <img src="img/67b334d6facfc75e79347ba9_Vector 3 (1).svg" alt="" class="arrow">
+                            </a>
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+
+                    <div class="item_wrap margin-top">
+                        <div class="item">
+                            <a href="">
+                                <img src="img/67b34391a804fa02a17e8b9a_Frame 40647.webp" alt="">
+                                <p>Private Data 기반<br>
+                                    기업향 LLM 모델 구축</p>
+                                <img src="img/67b334d6facfc75e79347ba9_Vector 3 (1).svg" alt="" class="arrow">
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <a href="">
+                                <img src="img/67b34391990346572b702cad_Frame 40668.webp" alt="">
+                                <p>노코드 AI 챗봇 빌더<br>
+                                    구축 및 운영 지원</p>
+                                <img src="img/67b334d6facfc75e79347ba9_Vector 3 (1).svg" alt="" class="arrow">
+                            </a>
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap-margin-top end -->
+                </div><!-- .item_list end -->
+
+            </div><!-- .inner end -->
         </section><!-- .section-02 end -->
+
+        <section class="section section-03">
+            <div class="inner">
+                <div class="section_title">
+                    <p class="heading">
+                        Blog
+                    </p>
+
+                    <a href="#" class="view_more">보러가기 →</a>
+                </div><!-- .section_title end -->
+
+                <div class="item_wrap">
+                    <!-- Swiper -->
+                    <div class="swiper blogSwiper">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/67e3841033db639ba687e3cb_construction.png" alt="">
+                                    </div><!-- .image end -->
+
+                                    <div class="text">
+                                        <p class="date">2025-03-26</p>
+                                        <p class="info">AI 기반 문서 검토 자동화 실제 사례 :: 건설업 편</p>
+                                        <span>자세히 보기</span>
+                                        <span class="arrow"><img src="img/arrow.svg" alt=""></span>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/67ceaf183a28462cd4339e64_dsds.png" alt="">
+                                    </div><!-- .image end -->
+
+                                    <div class="text">
+                                        <p class="date">2025-02-19</p>
+                                        <p class="info">딥시크(DeepSeek)가 주목받는 3가지 이유 :: 모델 연산, 아키텍처 분석부터 지식 증류 활용 방식까지</p>
+                                        <span>자세히 보기</span>
+                                        <span class="arrow"><img src="img/arrow.svg" alt=""></span>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/67c68eee4cd47d00ca4da2f6_rag - 복사본.png" alt="">
+                                    </div><!-- .image end -->
+
+                                    <div class="text">
+                                        <p class="date">2025-01-20</p>
+                                        <p class="info">실무에 강한 sLLM :: BELLA LLM 경찰청 도입 사례</p>
+                                        <span>자세히 보기</span>
+                                        <span class="arrow"><img src="img/arrow.svg" alt=""></span>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/67c693902ec63c2495ef45d1_multirag - 복사본.png" alt="">
+                                    </div><!-- .image end -->
+
+                                    <div class="text">
+                                        <p class="date">2024-12-16</p>
+                                        <p class="info">[무료 다운로드] 엔터프라이즈 AI 도입 우수사례집</p>
+                                        <span>자세히 보기</span>
+                                        <span class="arrow"><img src="img/arrow.svg" alt=""></span>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div><!-- .swiper-slide end -->
+                        </div><!-- .swiper-wrapper end -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div><!-- .blogSwiper end -->
+                </div><!-- .item_wrap end -->
+            </div><!-- .inner end -->
+        </section><!-- .section-03 end -->
+
+        <section class="section section-04">
+            <div class="padding">
+                <div class="inner">
+                    <div class="image">
+                        <img src="img/6794f7b284309048adca5fca_Frame 1321316301.webp" alt="">
+                    </div><!-- .image end -->
+
+                    <div class="text">
+                        <p>기업용 AI 솔루션 도입<br>
+                            스켈터랩스와 함께라면 생각보다 어렵지 않습니다.</p>
+                            
+                        <div class="btn_wrap">
+                            <a href="#" class="white_fill">문의하기 →</a>
+                            <a href="#" class="white_line">우수 사례 보러가기 →</a>
+                        </div><!-- .btn_wrap end -->
+                    </div><!-- .text end -->
+                </div><!-- .inner end -->
+            </div><!-- .padding end -->
+        </section><!-- .section-04 end -->
     </main><!-- .main end -->
+
+
 </body>
 
 </html>
