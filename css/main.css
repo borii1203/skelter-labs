@@ -27,6 +27,7 @@ html,
 body {
     font-size: 62.5%;
     font-family: 'Pretendard';
+    line-height: 1.5;
 }
 
 body {
@@ -73,6 +74,7 @@ body {
     background-color: #fff;
     color: #000;
 }
+
 .header.white .mBtn_open>div {
     background-color: #000;
 }
@@ -594,6 +596,116 @@ body {
 
 .section-04 .text .btn_wrap .white_line {
     border: 1px solid #fff;
+}
+
+/* footer */
+.footer {
+    background-color: #191919;
+}
+
+.footer .inner {
+    max-width: 1600px;
+    width: 100%;
+    padding-block: 100px;
+    padding-inline: 80px;
+    margin: 0 auto;
+}
+
+.footer .top_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .f_nav-depht01 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .f_nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.footer .f_nav .rest_nav {
+    display: flex;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.footer .f_nav .ai_list p {
+    margin-bottom: 16px;
+}
+
+.footer .f_nav .ai_list ul {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.footer .f_nav .ai_list ul li {
+    padding-top: 8px;
+}
+
+.footer .btn_wrap .fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    width: 213px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #fff3;
+    margin-bottom: 16px;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.footer .btn_wrap .line {
+    width: 213px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+
+    background-color: #ffffff0d;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.footer .btn_wrap .line span {
+    font-size: 1.4rem;
+}
+
+.footer .btn_wrap .line .metanet {
+    max-width: 57px;
+}
+
+.footer .legal_wrap {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 27px;
+
+    font-size: 1.3rem;
+}
+
+.footer .legal_wrap img {
+    width: 180px;
+    display: block;
+    filter: invert(1);
+}
+
+.footer .legal_wrap .copyright span {
+    display: block;
+}
+
+.footer .legal_wrap .copyright {
+    display: flex;
+    gap: 27px;
 }
 
 @media screen and (max-width:1144px) {
