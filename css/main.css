@@ -236,7 +236,7 @@ body {
 
 /* main_visual */
 .main_visual {
-    height: 1080px;
+    height: 100vh;
     position: relative;
 }
 
